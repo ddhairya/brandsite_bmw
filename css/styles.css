@@ -1,0 +1,23 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.flexend {
+  width: 100%;
+  justify-content: flex-end;
+}
+.header {
+  background-color: red;
+  height: 5%;
+}
+.sectioncont {
+  display: flex;
+  padding-top: 5vh;
+  height: 100vh;
+}
+.navbar-toggler:focus {
+  text-decoration: none;
+  /* outline: 0; */
+  box-shadow: 0 0 0 0rem !important;
+}
