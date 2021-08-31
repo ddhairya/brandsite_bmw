@@ -3,13 +3,13 @@
   padding: 0;
   box-sizing: border-box;
 }
+.landing {
+  background: url(../images/cover.jpg);
+  height: 100vh;
+}
 .flexend {
   width: 100%;
   justify-content: flex-end;
-}
-.header {
-  background-color: red;
-  height: 5%;
 }
 .sectioncont {
   display: flex;
