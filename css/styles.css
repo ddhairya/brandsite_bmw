@@ -69,7 +69,10 @@
   font-weight: 900;
 }
 .brandlogo{
-  width: 38px;
+  width: 100px;
+}
+.brandname{
+  width: 72px;
 }
 .menulogo{
   width: 28px;
@@ -90,7 +93,7 @@
 }
 
 .fixed-top {
-  z-index: 0 !important ;
+  z-index: 1 !important ;
 }
 
 
@@ -110,13 +113,16 @@
 }
 
 @media (max-width: 992px){
-  .bglight {
-     background-color: white !important; 
-     background-image: none  !important;   
-     opacity: 0.9;
+  .fixed-top {
+    z-index: 100 !important ;
   }
-  .nav-link {
-    color: black !important; 
+  .bglight {
+     background-color:rgba(0, 0, 0, 0.4) !important; 
+     background-image: none  !important;   
+     /* opacity: 0.9; */
+  }
+  .brandname{
+    width: 64px;
   }
   .navbar-brand{
     color: black !important;
@@ -127,15 +133,62 @@
   }
 }
 
+.tab-cont{
+  padding-top: 1rem;
+}
+.card{
+  background-color: transparent !important;
+}
+.service-list{
+  padding: 5rem 1rem 1rem 2rem;
+}
+.service-link{
+  color: #0653b6 !important;
+  
+}
+.service{
+  align-items: center !important;
+}
+
+.service-img{
+  width: 72px !important;
+}
+.col{
+  margin: 1rem 0rem !important;
+}
+
+.service-det{
+  display: flex;
+  
+  margin-right: 0px !important;
+}
+
+.Kodowanie-left{
+   /* background-color: aqua; */
+   text-align: justify;
+   /* border-color: black; */
+   padding: 2rem i !important;
+   border-width: 1px;
+   border-color: black;
+   border-style: dashed;
+   border-radius: 0.3rem;
+   overflow: hidden;
+
+}
+.Kodowanie-right{
+  /* width: 20%; */
+  border-width: 1px;
+  /* background-color: aqua; */
+  text-align: justify;
+  /* border-color: black; */
+  padding: 2rem !important;
+  overflow: hidden;
+}
+
 .dummy {
   width: 100%;
   height: 100vh;
   background-image: url(../images/cover.jpg);
   background-size: cover;
   padding-top: 4rem;
-}
-.dummy1 {
-  width: 100%;
-  height: 100vh;
-  background: black;
 }

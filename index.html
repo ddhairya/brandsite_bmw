@@ -13,6 +13,23 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css">
     <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Gsap  -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/ScrollTrigger.min.js"></script>
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.2/TweenMax.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.2/TimelineMax.min.js"></script>
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.7.1/ScrollTrigger.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.7.1/gsap.min.js"></script> -->
+
+    <!-- ScrollMagic -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.6/ScrollMagic.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.6/plugins/animation.gsap.min.js"></script>
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.8/ScrollMagic.min.js" integrity="sha512-8E3KZoPoZCD+1dgfqhPbejQBnQfBXe8FuwL4z/c8sTrgeDMFEnoyTlH3obB4/fV+6Sg0a0XF+L/6xS4Xx1fUEg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script> -->
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.8/plugins/animation.gsap.js" integrity="sha512-judXDFLnOTJsUwd55lhbrX3uSoSQSOZR6vNrsll+4ViUFv+XOIr/xaIK96soMj6s5jVszd7I97a0H+WhgFwTEg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script> -->
+    
     
     <title>BMW</title>
   </head>
@@ -20,7 +37,7 @@
     <div>
         <nav class="navbar navbar-expand-lg  fixed-top bglight">
             <div>
-              <a class="navbar-brand" href="#"><img class="brandlogo" src="/images/logo.png"/> BrandName</a>
+              <a class="navbar-brand" href="#"><img class="brandlogo" src="/images/logo.png"/><img class="brandname" src="/images/name.png"/></a>
             </div>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggler" aria-controls="navbarToggler" aria-expanded="false" aria-label="Toggle navigation">
               <img class="menulogo" src="/images/menu.png"/>
@@ -44,6 +61,7 @@
               </ul>
             </div>
         </nav>
+      
     </div>
     <div class="intro">
         <div class="intro-text-right">
@@ -61,9 +79,174 @@
             </h3>
         </div>  
     </div>
-    <div class=" dummy" id="home"> Hello</div>
-    <div class=" dummy1" id="about">World!</div>
-    <div class=" dummy" id="service"> Service</div>
+    <div class=" dummy" id="home"></div>
+    <div class="tab-cont" id="service"> 
+      <div class="service">
+        <div class="service-list">
+          <div class="row  row-cols-2 row-cols-md-3 row-cols-lg-5">
+            <div class="col">
+              <a href="#Kodowanie">
+              <div class="service card">
+                <img src="/images/Kodowanie.png" class="card-img-top service-img" alt="Kodowanie">
+                <div class="card-body">
+                  <h5 class="card-title service-link">Kodowanie</h5>
+                </div>
+              </div>
+              </a>
+            </div>
+            <div class="col">
+              <a href="#Doposażanie">
+                <div class="service card">
+                  <img src="/images/Doposażanie.png" class="card-img-top service-img" alt="Doposażanie">
+                  <div class="card-body">
+                    <h5 class="card-title service-link">Doposażanie</h5>
+                  </div>
+                </div>
+              </a>
+            </div>
+            <div class="col">
+              <a href="#Klimatyzacja">
+                <div class="service card">
+                  <img src="/images/Klimatyzacja.png" class="card-img-top service-img" alt="Klimatyzacja">
+                  <div class="card-body">
+                    <h5 class="card-title service-link">Klimatyzacja</h5>
+                  </div>
+                </div>
+              </a>
+            </div>
+            <div class="col">
+              <a href="#Map">
+              <div class="service card">
+                <img src="/images/Aktualizacja-map.png" class="card-img-top service-img" alt="Aktualizacja-Map">
+                <div class="card-body">
+                  <h5 class="card-title service-link">Nawigacyjnych</h5>
+                </div>
+              </div>
+              </a>
+            </div>
+            <div class="col">
+              <a href="#Uslugi">
+                <div class="service card">
+                  <img src="/images/Usługi.png" class="card-img-top service-img" alt="Usługi-Online">
+                  <div class="card-body">
+                    <h5 class="card-title service-link">Usługi Online</h5>
+                  </div>
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="Kodowanie" class="service-list"> Kodowanie
+      
+      <div class="service-det service-list row  row-cols-1 row-cols-md-2 row-cols-lg-2" >
+      
+        
+        <div class="col Kodowanie-left " id="Kodowanie-left">
+          <p >
+            Jak powszechnie wiadomo samochody BMW są bardzo zaawansowane technologicznie. Ze względu na ogromną rozpiętość wersji wyposażenia samochodów, producenci zaimplementowali do wszystkich sterowników możliwość tzw kodowania. Polega ono na włączaniu lub wyłączaniu rozmaitych funkcji dodatkowych . Jesteśmy w stanie dostosować te kody indywidualnie dla każdego klienta. Poniżej przedstawiamy niewielką część możliwości jakie daje kodowanie:
+          </p>
+        </div>
+        <div class="col Kodowanie-right" id="Kodowanie-right">
+          <ul>
+            <li>odblokowanie funkcji oglądania DVD podczas jazdy</li>
+            <li>dodatkowe menu – bieżąca moc i moment obrotowy</li>
+            <li>dezaktywacja lub pamięć systemu „Auto Start Stop”</li>
+            <li>automatyczne składanie lusterek z pilota po zamknięciu auta</li>
+          </ul>
+        </div>
+
+      </div>
+
+    </div>
+
+    <div class=" service-list" id="Doposażanie">Doposażanie
+      <div class="service-det service-list row  row-cols-1 row-cols-md-2 row-cols-lg-2" >
+      
+        
+        <div class="col Kodowanie-left " id="Doposażanie-left">
+          <p >
+            Jak powszechnie wiadomo samochody BMW są bardzo zaawansowane technologicznie. Ze względu na ogromną rozpiętość wersji wyposażenia samochodów, producenci zaimplementowali do wszystkich sterowników możliwość tzw kodowania. Polega ono na włączaniu lub wyłączaniu rozmaitych funkcji dodatkowych . Jesteśmy w stanie dostosować te kody indywidualnie dla każdego klienta. Poniżej przedstawiamy niewielką część możliwości jakie daje kodowanie:
+          </p>
+        </div>
+        <div class="col Kodowanie-right" id="Doposażanie-right">
+          <ul>
+            <li>odblokowanie funkcji oglądania DVD podczas jazdy</li>
+            <li>dodatkowe menu – bieżąca moc i moment obrotowy</li>
+            <li>dezaktywacja lub pamięć systemu „Auto Start Stop”</li>
+            <li>automatyczne składanie lusterek z pilota po zamknięciu auta</li>
+          </ul>
+        </div>
+      
+      </div>
+    </div>
+    <div class="service-list" id="Klimatyzacja">Klimatyzacja
+
+      <div class="service-det service-list row  row-cols-1 row-cols-md-2 row-cols-lg-2" >
+      
+        
+        <div class="col Kodowanie-left " id="Klimatyzacja-left">
+          <p >
+            Jak powszechnie wiadomo samochody BMW są bardzo zaawansowane technologicznie. Ze względu na ogromną rozpiętość wersji wyposażenia samochodów, producenci zaimplementowali do wszystkich sterowników możliwość tzw kodowania. Polega ono na włączaniu lub wyłączaniu rozmaitych funkcji dodatkowych . Jesteśmy w stanie dostosować te kody indywidualnie dla każdego klienta. Poniżej przedstawiamy niewielką część możliwości jakie daje kodowanie:
+          </p>
+        </div>
+        <div class="col Kodowanie-right" id="Klimatyzacja-right">
+          <ul>
+            <li>odblokowanie funkcji oglądania DVD podczas jazdy</li>
+            <li>dodatkowe menu – bieżąca moc i moment obrotowy</li>
+            <li>dezaktywacja lub pamięć systemu „Auto Start Stop”</li>
+            <li>automatyczne składanie lusterek z pilota po zamknięciu auta</li>
+          </ul>
+        </div>
+        
+      </div>
+      
+    </div>
+    <div class="service-list" id="Map">Map
+
+      <div class="service-det service-list row  row-cols-1 row-cols-md-2 row-cols-lg-2" >
+      
+        
+        <div class="col Kodowanie-left " id="Map-left">
+          <p >
+            Jak powszechnie wiadomo samochody BMW są bardzo zaawansowane technologicznie. Ze względu na ogromną rozpiętość wersji wyposażenia samochodów, producenci zaimplementowali do wszystkich sterowników możliwość tzw kodowania. Polega ono na włączaniu lub wyłączaniu rozmaitych funkcji dodatkowych . Jesteśmy w stanie dostosować te kody indywidualnie dla każdego klienta. Poniżej przedstawiamy niewielką część możliwości jakie daje kodowanie:
+          </p>
+        </div>
+        <div class="col Kodowanie-right" id="Map-right">
+          <ul>
+            <li>odblokowanie funkcji oglądania DVD podczas jazdy</li>
+            <li>dodatkowe menu – bieżąca moc i moment obrotowy</li>
+            <li>dezaktywacja lub pamięć systemu „Auto Start Stop”</li>
+            <li>automatyczne składanie lusterek z pilota po zamknięciu auta</li>
+          </ul>
+        </div>
+
+      </div>
+
+    </div>
+    <div class="service-list" id="Uslugi">Usługi
+
+      <div class="service-det service-list row  row-cols-1 row-cols-md-2 row-cols-lg-2" >
+      
+        
+        <div class="col Kodowanie-left " id="Uslugi-left">
+          <p >
+            Jak powszechnie wiadomo samochody BMW są bardzo zaawansowane technologicznie. Ze względu na ogromną rozpiętość wersji wyposażenia samochodów, producenci zaimplementowali do wszystkich sterowników możliwość tzw kodowania. Polega ono na włączaniu lub wyłączaniu rozmaitych funkcji dodatkowych . Jesteśmy w stanie dostosować te kody indywidualnie dla każdego klienta. Poniżej przedstawiamy niewielką część możliwości jakie daje kodowanie:
+          </p>
+        </div>
+        <div class="col Kodowanie-right" id="Uslugi-right">
+          <ul>
+            <li>odblokowanie funkcji oglądania DVD podczas jazdy</li>
+            <li>dodatkowe menu – bieżąca moc i moment obrotowy</li>
+            <li>dezaktywacja lub pamięć systemu „Auto Start Stop”</li>
+            <li>automatyczne składanie lusterek z pilota po zamknięciu auta</li>
+          </ul>
+        </div>
+
+      </div>
+
+    </div>
     <div class="dummy1" id="contact">Contact</div>
     
 
@@ -72,12 +255,7 @@
 
 
 
-    <!-- ScrollMagic -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.8/ScrollMagic.min.js" integrity="sha512-8E3KZoPoZCD+1dgfqhPbejQBnQfBXe8FuwL4z/c8sTrgeDMFEnoyTlH3obB4/fV+6Sg0a0XF+L/6xS4Xx1fUEg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.8/plugins/animation.gsap.js" integrity="sha512-judXDFLnOTJsUwd55lhbrX3uSoSQSOZR6vNrsll+4ViUFv+XOIr/xaIK96soMj6s5jVszd7I97a0H+WhgFwTEg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-    <!-- Gsap  -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.7.1/gsap.min.js"></script>
-    <!-- your content here... -->
+     <!-- your content here... -->
     <script src="./js/script.js"></script>
 
     <!-- Default link -->
