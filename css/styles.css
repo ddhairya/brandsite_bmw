@@ -253,7 +253,7 @@
 .Map-left {
   background-color: rgba(0, 0, 0, 0) !important;
   text-align: justify;
-  transform: translateX(-10%);
+  /* transform: translateX(-0%); */
 }
 .Map-right-img {
   background-image: url(../images/d1.jpg);

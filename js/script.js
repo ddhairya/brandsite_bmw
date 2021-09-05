@@ -151,8 +151,8 @@ gsap.from("#Doposażanie-left-img",{
     toggleActions:"restart pause reverse pause"
   },
   x: "100%", 
-  opacity: 0.3,
-  duration:1,
+  opacity: 0.2,
+  duration:3,
   delay: 0.5
 })
 
@@ -221,7 +221,7 @@ gsap.to("#Map-title",{
 gsap.from("#Map-left",{
   scrollTrigger:{
     trigger: "#Map",
-    start: "top top",
+    start: "top center",
     endtrigger: "#Map",
     end:"bottom 90%",
     scrub: 1,
@@ -229,7 +229,7 @@ gsap.from("#Map-left",{
     // pinSpacing: false,
     toggleActions:"restart pause reverse pause"
   },
-  x:"0%",
+  x:-100,
   duration: 1
 })
 
