@@ -104,7 +104,7 @@ gsap.from("#AutoElektronika-left",{
     // pinSpacing: false,
     toggleActions:"restart pause reverse pause"
   },
-  x: "100%", 
+  x: 20, 
   opacity: 0,
   duration:3,
   delay: 0.5
