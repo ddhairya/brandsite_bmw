@@ -237,6 +237,7 @@
   border-color: black;
   border-style: dashed; */
   border-radius: 0.3rem;
+  text-align: justify;
 }
 .Doposażanie-left-img {
   background-image: url(../images/d1.jpg);
@@ -246,9 +247,12 @@
   background-size: cover;
   /* transform: translateX(-100%); */
 }
+.Klimatyzacja-left {
+  text-align: justify;
+}
 .Map-left {
   background-color: rgba(0, 0, 0, 0) !important;
-
+  text-align: justify;
   transform: translateX(-10%);
 }
 .Map-right-img {
@@ -258,6 +262,9 @@
   border-radius: 5rem;
   background-size: cover;
   /* transform: translateX(-100%); */
+}
+.Uslugi-text {
+  text-align: justify;
 }
 /* .dummy {
   width: 100%;
