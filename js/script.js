@@ -112,7 +112,7 @@ gsap.from("#AutoElektronika-left",{
 gsap.from("#AutoElektronika-right",{
   scrollTrigger:{
     trigger: "#AutoElektronika",
-    start: "bottom bottom",
+    start: "top center",
     endtrigger: "#AutoElektronika",
     end:"bottom 80%",
     scrub: 1,
