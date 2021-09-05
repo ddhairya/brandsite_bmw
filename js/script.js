@@ -2,9 +2,9 @@
 gsap.registerPlugin(ScrollTrigger);
 const tl = gsap.timeline({ defaults: { ease: "power1.out" } });
 
-tl.to(".text-right", { y: "0%", duration: 1, stagger: 0.25 });
- tl.to(".hide-left", { x: "0%", duration: 0.75 },"-=0.75");
-tl.to(".text-left", { y: "0%", duration: 0.75, stagger: 0.25 },"-=0.5");
+// tl.to(".text-right", { y: "0%", duration: 1, stagger: 0.25 });
+// tl.to(".hide-left", { x: "0%", duration: 0.75 },"-=0.75");
+// tl.to(".text-left", { y: "0%", duration: 0.75, stagger: 0.25 },"-=0.5");
 tl.to(".intro", { y: "-100%", duration: 1, delay: 0.5  });
 // tl.to(".intro", { y: "-100%", duration: 1, delay: 0.5  });
 
@@ -79,10 +79,24 @@ tl.to(".intro", { y: "-100%", duration: 1, delay: 0.5  });
 //   .to(".box", {rotation: 360})
 //   .addLabel("end");
 
+gsap.to("#Kodowanie-title",{
+  scrollTrigger:{
+    trigger: "#Kodowanie",
+    start: "top bottom",
+    endtrigger: "#Kodowanie-left",
+    end:"bottom 90%",
+    scrub: 1,
+    // pin: true,
+    // pinSpacing: false,
+    toggleActions:"restart pause reverse pause"
+  },
+  x:"0%",
+  duration: 1
+})
 
 gsap.from("#Kodowanie-left",{
   scrollTrigger:{
-    trigger: "#Kodowanie-left",
+    trigger: "#Kodowanie",
     start: "top center",
     endtrigger: "#Kodowanie",
     end:"bottom 90%",
@@ -98,7 +112,7 @@ gsap.from("#Kodowanie-left",{
 })
 gsap.from("#Kodowanie-right",{
   scrollTrigger:{
-    trigger: "#Kodowanie-right",
+    trigger: "#Kodowanie",
     start: "top center",
     endtrigger: "#Kodowanie",
     end:"bottom 80%",
@@ -108,4 +122,130 @@ gsap.from("#Kodowanie-right",{
   x:10, 
   opacity: 0.1,
   duration: 2
+})
+
+gsap.to("#Doposażanie-title",{
+  scrollTrigger:{
+    trigger: "#Doposażanie",
+    start: "top bottom",
+    endtrigger: "#Doposażanie-title",
+    end:"bottom 90%",
+    scrub: 1,
+    // pin: true,
+    // pinSpacing: false,
+    toggleActions:"restart pause reverse pause"
+  },
+  x:"0%",
+  duration: 1
+})
+
+gsap.from("#Doposażanie-left-img",{
+  scrollTrigger:{
+    trigger: "#Doposażanie-left",
+    start: "top center",
+    endtrigger: "#Doposażanie",
+    end:"bottom 90%",
+    scrub: 1,
+    // pin: true,
+    // pinSpacing: false,
+    toggleActions:"restart pause reverse pause"
+  },
+  x: "100%", 
+  opacity: 0.3,
+  duration:1,
+  delay: 0.5
+})
+
+gsap.from("#Doposażanie-right",{
+  scrollTrigger:{
+    trigger: "#Doposażanie",
+    start: "top center",
+    endtrigger: "#Doposażanie",
+    end:"bottom 80%",
+    scrub: 1,
+    toggleActions:"restart pause reverse pause"
+  },
+  x:10, 
+  opacity: 0.1,
+  duration: 2
+})
+
+gsap.to("#Klimatyzacja-title",{
+  scrollTrigger:{
+    trigger: "#Klimatyzacja",
+    start: "top bottom",
+    endtrigger: "#Klimatyzacja-title",
+    end:"bottom 90%",
+    scrub: 1,
+    // pin: true,
+    // pinSpacing: false,
+    toggleActions:"restart pause reverse pause"
+  },
+  x:"0%",
+  duration: 1
+})
+
+gsap.from("#Klimatyzacja-det",{
+  scrollTrigger:{
+    trigger: "#Klimatyzacja",
+    start: "center center",
+    endtrigger: "#Klimatyzacja",
+    end:"bottom 90%",
+    scrub: 1,
+    // pin: true,
+    // pinSpacing: false,
+    toggleActions:"restart pause reverse pause"
+  },
+  x:10, 
+  opacity: 0.1,
+  duration:2,
+  delay: 0.5
+})
+
+gsap.to("#Map-title",{
+  scrollTrigger:{
+    trigger: "#Map",
+    start: "top bottom",
+    endtrigger: "#Map-title",
+    end:"bottom 90%",
+    scrub: 1,
+    // pin: true,
+    // pinSpacing: false,
+    toggleActions:"restart pause reverse pause"
+  },
+  x:"0%",
+  duration: 1
+})
+
+
+gsap.from("#Map-left",{
+  scrollTrigger:{
+    trigger: "#Map",
+    start: "top top",
+    endtrigger: "#Map",
+    end:"bottom 90%",
+    scrub: 1,
+    // pin: true,
+    // pinSpacing: false,
+    toggleActions:"restart pause reverse pause"
+  },
+  x:"0%",
+  duration: 1
+})
+
+gsap.from("#Map-right-img",{
+  scrollTrigger:{
+    trigger: "#Map",
+    start: "center center",
+    endtrigger: "#Map",
+    end:"bottom 90%",
+    scrub: 1,
+    // pin: true,
+    // pinSpacing: false,
+    toggleActions:"restart pause reverse pause"
+  },
+  x:10, 
+  opacity: 0.1,
+  duration:2,
+  delay: 0.5
 })
