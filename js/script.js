@@ -249,3 +249,53 @@ gsap.from("#Map-right-img",{
   duration:2,
   delay: 0.5
 })
+
+
+
+gsap.to("#Uslugi-title",{
+  scrollTrigger:{
+    trigger: "#Uslugi",
+    start: "top bottom",
+    endtrigger: "#Uslugi-title",
+    end:"bottom 90%",
+    scrub: 1,
+    // pin: true,
+    // pinSpacing: false,
+    toggleActions:"restart pause reverse pause"
+  },
+  x:"0%",
+  duration: 1
+})
+
+gsap.from("#Uslugi-top",{
+  scrollTrigger:{
+    trigger: "#Uslugi",
+    start: "top top",
+    endtrigger: "#Uslugi",
+    end:"bottom 90%",
+    scrub: 1,
+    // pin: true,
+    // pinSpacing: false,
+    toggleActions:"restart pause reverse pause"
+  },
+  y:20, 
+  opacity: 0.1,
+  duration:2,
+  delay: 0.5
+})
+gsap.from("#Uslugi-down",{
+  scrollTrigger:{
+    trigger: "#Uslugi",
+    start: "top top",
+    endtrigger: "#Uslugi",
+    end:"bottom 90%",
+    scrub: 1,
+    // pin: true,
+    // pinSpacing: false,
+    toggleActions:"restart pause reverse pause"
+  },
+  y:-20, 
+  opacity: 0.1,
+  duration:2,
+  delay: 0.5
+})
