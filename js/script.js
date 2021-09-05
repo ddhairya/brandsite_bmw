@@ -79,6 +79,51 @@ tl.to(".intro", { y: "-100%", duration: 1, delay: 0.5  });
 //   .to(".box", {rotation: 360})
 //   .addLabel("end");
 
+gsap.to("#AutoElektronika-title",{
+  scrollTrigger:{
+    trigger: "#AutoElektronika",
+    start: "top bottom",
+    endtrigger: "#AutoElektronika-left",
+    end:"bottom 90%",
+    scrub: 1,
+    // pin: true,
+    // pinSpacing: false,
+    toggleActions:"restart pause reverse pause"
+  },
+  x:"0%",
+  duration: 1
+})
+gsap.from("#AutoElektronika-left",{
+  scrollTrigger:{
+    trigger: "#AutoElektronika-left",
+    start: "top 80%",
+    endtrigger: "#AutoElektronika",
+    end:"bottom 95%",
+    scrub: 1,
+    // pin: true,
+    // pinSpacing: false,
+    toggleActions:"restart pause reverse pause"
+  },
+  x: "100%", 
+  opacity: 0,
+  duration:3,
+  delay: 0.5
+})
+gsap.from("#AutoElektronika-right",{
+  scrollTrigger:{
+    trigger: "#AutoElektronika",
+    start: "bottom bottom",
+    endtrigger: "#AutoElektronika",
+    end:"bottom 80%",
+    scrub: 1,
+    toggleActions:"restart pause reverse pause"
+  },
+  x:"-100%", 
+  opacity: 0.1,
+  duration: 2
+})
+
+
 gsap.to("#Kodowanie-title",{
   scrollTrigger:{
     trigger: "#Kodowanie",
