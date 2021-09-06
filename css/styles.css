@@ -14,6 +14,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  z-index: 101;
 }
 .introtext {
   font-size: 3rem;
@@ -196,12 +197,11 @@
   color: white;
 }
 
-
 .AutoElektronika-left {
   /* background-color: aqua; */
   text-align: justify;
   /* border-color: black; */
-  
+
   overflow: hidden;
 }
 .AutoElektronika-right {
@@ -221,8 +221,6 @@
 .AutoElektronika-left-text {
   margin-bottom: 0rem !important;
 }
-
-
 
 .Kodowanie-left {
   /* background-color: aqua; */
