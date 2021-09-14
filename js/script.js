@@ -2,10 +2,10 @@
 gsap.registerPlugin(ScrollTrigger);
 const tl = gsap.timeline({ defaults: { ease: "power1.out" } });
 
-tl.to(".text-right", { y: "0%", duration: 1, stagger: 0.25 });
-tl.to(".hide-left", { x: "0%", duration: 0.75 },"-=0.75");
-tl.to(".text-left", { y: "0%", duration: 0.75, stagger: 0.25 },"-=0.5");
-tl.to(".intro", { y: "-100%", duration: 1, delay: 0.5  });
+tl.to(".text-right", { y: "0%", duration: 1.5, stagger: 0.25 });
+tl.to(".hide-left", { x: "0%", duration: 1.5 },"-=0.75");
+tl.to(".text-left", { y: "0%", duration: 0.75, stagger: 0.75 },"-=0.5");
+tl.to(".intro", { y: "-100%", duration: 1.75, delay: 1.5  });
 // tl.to(".intro", { y: "-100%", duration: 1, delay: 0.5  });
 
 
@@ -93,35 +93,35 @@ gsap.to("#AutoElektronika-title",{
   x:"0%",
   duration: 1
 })
-gsap.from("#AutoElektronika-left",{
-  scrollTrigger:{
-    trigger: "#AutoElektronika-left",
-    start: "top 80%",
-    endtrigger: "#AutoElektronika",
-    end:"bottom 95%",
-    scrub: 1,
-    // pin: true,
-    // pinSpacing: false,
-    toggleActions:"restart pause reverse pause"
-  },
-  x: 20, 
-  opacity: 0,
-  duration:3,
-  delay: 0.5
-})
-gsap.from("#AutoElektronika-right",{
-  scrollTrigger:{
-    trigger: "#AutoElektronika",
-    start: "top center",
-    endtrigger: "#AutoElektronika",
-    end:"bottom 80%",
-    scrub: 1,
-    toggleActions:"restart pause reverse pause"
-  },
-  x:"-100%", 
-  opacity: 0.1,
-  duration: 2
-})
+// gsap.from("#AutoElektronika-left",{
+//   scrollTrigger:{
+//     trigger: "#AutoElektronika-left",
+//     start: "top 80%",
+//     endtrigger: "#AutoElektronika",
+//     end:"bottom 95%",
+//     scrub: 1,
+//     // pin: true,
+//     // pinSpacing: false,
+//     toggleActions:"restart pause reverse pause"
+//   },
+//   x: 20, 
+//   opacity: 0,
+//   duration:3,
+//   delay: 0.5
+// })
+// gsap.from("#AutoElektronika-right",{
+//   scrollTrigger:{
+//     trigger: "#AutoElektronika",
+//     start: "top center",
+//     endtrigger: "#AutoElektronika",
+//     end:"bottom 80%",
+//     scrub: 1,
+//     toggleActions:"restart pause reverse pause"
+//   },
+//   x:"-100%", 
+//   opacity: 0.1,
+//   duration: 2
+// })
 
 
 gsap.to("#Kodowanie-title",{
@@ -139,35 +139,35 @@ gsap.to("#Kodowanie-title",{
   duration: 1
 })
 
-gsap.from("#Kodowanie-left",{
-  scrollTrigger:{
-    trigger: "#Kodowanie",
-    start: "top center",
-    endtrigger: "#Kodowanie",
-    end:"bottom 90%",
-    scrub: 1,
-    // pin: true,
-    // pinSpacing: false,
-    toggleActions:"restart pause reverse pause"
-  },
-  x:-100, 
-  opacity: 0.3,
-  duration:1,
-  delay: 0.5
-})
-gsap.from("#Kodowanie-right",{
-  scrollTrigger:{
-    trigger: "#Kodowanie",
-    start: "top center",
-    endtrigger: "#Kodowanie",
-    end:"bottom 80%",
-    scrub: 1,
-    toggleActions:"restart pause reverse pause"
-  },
-  x:10, 
-  opacity: 0.1,
-  duration: 2
-})
+// gsap.from("#Kodowanie-left",{
+//   scrollTrigger:{
+//     trigger: "#Kodowanie",
+//     start: "top center",
+//     endtrigger: "#Kodowanie",
+//     end:"bottom 90%",
+//     scrub: 1,
+//     // pin: true,
+//     // pinSpacing: false,
+//     toggleActions:"restart pause reverse pause"
+//   },
+//   x:-100, 
+//   opacity: 0.3,
+//   duration:1,
+//   delay: 0.5
+// })
+// gsap.from("#Kodowanie-right",{
+//   scrollTrigger:{
+//     trigger: "#Kodowanie",
+//     start: "top center",
+//     endtrigger: "#Kodowanie",
+//     end:"bottom 80%",
+//     scrub: 1,
+//     toggleActions:"restart pause reverse pause"
+//   },
+//   x:10, 
+//   opacity: 0.1,
+//   duration: 2
+// })
 
 gsap.to("#Doposażanie-title",{
   scrollTrigger:{
@@ -184,22 +184,22 @@ gsap.to("#Doposażanie-title",{
   duration: 1
 })
 
-gsap.from("#Doposażanie-left-img",{
-  scrollTrigger:{
-    trigger: "#Doposażanie-left",
-    start: "top center",
-    endtrigger: "#Doposażanie",
-    end:"bottom 90%",
-    scrub: 1,
-    // pin: true,
-    // pinSpacing: false,
-    toggleActions:"restart pause reverse pause"
-  },
-  x: "100%", 
-  opacity: 0.2,
-  duration:3,
-  delay: 0.5
-})
+// gsap.from("#Doposażanie-left-img",{
+//   scrollTrigger:{
+//     trigger: "#Doposażanie-left",
+//     start: "top center",
+//     endtrigger: "#Doposażanie",
+//     end:"bottom 90%",
+//     scrub: 1,
+//     // pin: true,
+//     // pinSpacing: false,
+//     toggleActions:"restart pause reverse pause"
+//   },
+//   x: "100%", 
+//   opacity: 0.2,
+//   duration:3,
+//   delay: 0.5
+// })
 
 gsap.from("#Doposażanie-right",{
   scrollTrigger:{
@@ -278,22 +278,22 @@ gsap.from("#Map-left",{
   duration: 1
 })
 
-gsap.from("#Map-right-img",{
-  scrollTrigger:{
-    trigger: "#Map",
-    start: "center center",
-    endtrigger: "#Map",
-    end:"bottom 90%",
-    scrub: 1,
-    // pin: true,
-    // pinSpacing: false,
-    toggleActions:"restart pause reverse pause"
-  },
-  x:10, 
-  opacity: 0.1,
-  duration:2,
-  delay: 0.5
-})
+// gsap.from("#Map-right-img",{
+//   scrollTrigger:{
+//     trigger: "#Map",
+//     start: "center center",
+//     endtrigger: "#Map",
+//     end:"bottom 90%",
+//     scrub: 1,
+//     // pin: true,
+//     // pinSpacing: false,
+//     toggleActions:"restart pause reverse pause"
+//   },
+//   x:10, 
+//   opacity: 0.1,
+//   duration:2,
+//   delay: 0.5
+// })
 
 
 
@@ -312,35 +312,35 @@ gsap.to("#Uslugi-title",{
   duration: 1
 })
 
-gsap.from("#Uslugi-top",{
-  scrollTrigger:{
-    trigger: "#Uslugi",
-    start: "top top",
-    endtrigger: "#Uslugi",
-    end:"bottom 90%",
-    scrub: 1,
-    // pin: true,
-    // pinSpacing: false,
-    toggleActions:"restart pause reverse pause"
-  },
-  y:20, 
-  opacity: 0.1,
-  duration:2,
-  delay: 0.5
-})
-gsap.from("#Uslugi-down",{
-  scrollTrigger:{
-    trigger: "#Uslugi",
-    start: "top top",
-    endtrigger: "#Uslugi",
-    end:"bottom 90%",
-    scrub: 1,
-    // pin: true,
-    // pinSpacing: false,
-    toggleActions:"restart pause reverse pause"
-  },
-  y:-20, 
-  opacity: 0.1,
-  duration:2,
-  delay: 0.5
-})
+// gsap.from("#Uslugi-top",{
+//   scrollTrigger:{
+//     trigger: "#Uslugi",
+//     start: "top top",
+//     endtrigger: "#Uslugi",
+//     end:"bottom 90%",
+//     scrub: 1,
+//     // pin: true,
+//     // pinSpacing: false,
+//     toggleActions:"restart pause reverse pause"
+//   },
+//   y:20, 
+//   opacity: 0.1,
+//   duration:2,
+//   delay: 0.5
+// })
+// gsap.from("#Uslugi-down",{
+//   scrollTrigger:{
+//     trigger: "#Uslugi",
+//     start: "top top",
+//     endtrigger: "#Uslugi",
+//     end:"bottom 90%",
+//     scrub: 1,
+//     // pin: true,
+//     // pinSpacing: false,
+//     toggleActions:"restart pause reverse pause"
+//   },
+//   y:-20, 
+//   opacity: 0.1,
+//   duration:2,
+//   delay: 0.5
+// })

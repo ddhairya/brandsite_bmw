@@ -163,6 +163,7 @@
 }
 .service {
   align-items: center !important;
+  padding: 2rem;
 }
 
 .service-img {
@@ -268,7 +269,7 @@
   background-image: url(../images/d1.jpg);
   height: 300px;
   margin: 1rem;
-  border-radius: 50%;
+  border-radius: 5rem;
   background-size: cover;
   /* transform: translateX(-100%); */
 }
