@@ -201,19 +201,19 @@ gsap.to("#Doposażanie-title",{
 //   delay: 0.5
 // })
 
-gsap.from("#Doposażanie-right",{
-  scrollTrigger:{
-    trigger: "#Doposażanie",
-    start: "top center",
-    endtrigger: "#Doposażanie",
-    end:"bottom 80%",
-    scrub: 1,
-    toggleActions:"restart pause reverse pause"
-  },
-  x:10, 
-  opacity: 0.1,
-  duration: 2
-})
+// gsap.from("#Doposażanie-right",{
+//   scrollTrigger:{
+//     trigger: "#Doposażanie",
+//     start: "top center",
+//     endtrigger: "#Doposażanie",
+//     end:"bottom 80%",
+//     scrub: 1,
+//     toggleActions:"restart pause reverse pause"
+//   },
+//   x:10, 
+//   opacity: 0.1,
+//   duration: 2
+// })
 
 gsap.to("#Klimatyzacja-title",{
   scrollTrigger:{
