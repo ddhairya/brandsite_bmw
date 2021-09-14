@@ -230,22 +230,22 @@ gsap.to("#Klimatyzacja-title",{
   duration: 1
 })
 
-gsap.from("#Klimatyzacja-det",{
-  scrollTrigger:{
-    trigger: "#Klimatyzacja",
-    start: "top center",
-    endtrigger: "#Klimatyzacja",
-    end:"bottom 90%",
-    scrub: 1,
-    // pin: true,
-    // pinSpacing: false,
-    toggleActions:"restart pause reverse pause"
-  },
-  x:10, 
-  opacity: 0.2,
-  duration:2,
-  delay: 0.5
-})
+// gsap.from("#Klimatyzacja-det",{
+//   scrollTrigger:{
+//     trigger: "#Klimatyzacja",
+//     start: "top center",
+//     endtrigger: "#Klimatyzacja",
+//     end:"bottom 90%",
+//     scrub: 1,
+//     // pin: true,
+//     // pinSpacing: false,
+//     toggleActions:"restart pause reverse pause"
+//   },
+//   x:10, 
+//   opacity: 0.2,
+//   duration:2,
+//   delay: 0.5
+// })
 
 gsap.to("#Map-title",{
   scrollTrigger:{
@@ -263,20 +263,20 @@ gsap.to("#Map-title",{
 })
 
 
-gsap.from("#Map-left",{
-  scrollTrigger:{
-    trigger: "#Map",
-    start: "top center",
-    endtrigger: "#Map",
-    end:"bottom 90%",
-    scrub: 1,
-    // pin: true,
-    // pinSpacing: false,
-    toggleActions:"restart pause reverse pause"
-  },
-  x:-100,
-  duration: 1
-})
+// gsap.from("#Map-left",{
+//   scrollTrigger:{
+//     trigger: "#Map",
+//     start: "top center",
+//     endtrigger: "#Map",
+//     end:"bottom 90%",
+//     scrub: 1,
+//     // pin: true,
+//     // pinSpacing: false,
+//     toggleActions:"restart pause reverse pause"
+//   },
+//   x:-100,
+//   duration: 1
+// })
 
 // gsap.from("#Map-right-img",{
 //   scrollTrigger:{
