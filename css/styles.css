@@ -206,17 +206,17 @@
   overflow: hidden;
 }
 .AutoElektronika-right {
-  padding: 2rem i !important;
+  /* padding: 2rem i !important;
   border-width: 1px;
   border-color: black;
   border-style: dashed;
-  border-radius: 0.3rem;
+  border-radius: 0.3rem; */
   /* width: 20%; */
-  border-width: 1px;
+  /* border-width: 1px; */
   /* background-color: aqua; */
   text-align: justify;
   /* border-color: black; */
-  padding: 2rem !important;
+  /* padding: 2rem !important; */
   overflow: hidden;
 }
 .AutoElektronika-left-text {
@@ -227,20 +227,20 @@
   /* background-color: aqua; */
   text-align: justify;
   /* border-color: black; */
-  padding: 2rem i !important;
+  /* padding: 2rem i !important;
   border-width: 1px;
   border-color: black;
   border-style: dashed;
-  border-radius: 0.3rem;
+  border-radius: 0.3rem; */
   overflow: hidden;
 }
 .Kodowanie-right {
   /* width: 20%; */
-  border-width: 1px;
+  /* border-width: 1px; */
   /* background-color: aqua; */
   text-align: justify;
   /* border-color: black; */
-  padding: 2rem !important;
+  padding-left: 2rem !important;
   overflow: hidden;
 }
 .Kodowanie-left-text {
