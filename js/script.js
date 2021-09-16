@@ -345,3 +345,17 @@ gsap.to("#Uslugi-title",{
 //   duration:2,
 //   delay: 0.5
 // })
+gsap.to("#cennik-title",{
+  scrollTrigger:{
+    trigger: "#cennik",
+    start: "top center",
+    endtrigger: "#cennik",
+    end:"top 40%",
+    scrub: 1,
+    // pin: true,
+    // pinSpacing: false,
+    toggleActions:"restart pause reverse pause"
+  },
+  x:"0%",
+  duration: 1
+})
