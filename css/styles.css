@@ -3,6 +3,11 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: 'Urbanist', sans-serif;
+}
+ul{
+  margin-left: 1rem  !important;
+
 }
 .intro {
   background: black;
@@ -18,6 +23,8 @@
 }
 .introtext {
   font-size: 3rem;
+  font-family: 'Urbanist', sans-serif;
+  font-weight: 400;
 }
 .intro-text-right {
   background-color: black;
@@ -111,7 +118,7 @@
 }
 
 .fixed-top {
-  z-index: 0 !important ;
+  z-index: 100 !important ;
 }
 
 .bglight {
@@ -147,6 +154,15 @@
   .service-det-title {
     width: 100% !important;
   }
+  .col{
+    padding: 0rem !important;
+  }
+  .service{
+    padding: 0.5rem 0rem !important;
+  }
+  .service-list {
+    padding: 5rem 0.5rem 0.5rem 0.5rem !important;
+  }
 }
 
 .tab-cont {
@@ -171,6 +187,8 @@
 }
 .col {
   margin: 1rem 0rem !important;
+  padding: 0rem 2rem !important;
+
 }
 
 .service-det {
@@ -179,6 +197,8 @@
   margin-right: 0px !important;
 }
 .service-det-title {
+  font-family: 'Urbanist', sans-serif;
+  font-weight: 400;
   padding: 1rem 1rem 1rem 2rem;
   text-align: center;
   border-radius: 0.2rem;
@@ -190,11 +210,19 @@
     rgb(0, 0, 0, 0.7), rgba(255, 255, 255, 0.9),
     rgba(6, 83, 182, 1), black
   ) !important; */
-  background: linear-gradient(
+  background-image: linear-gradient(
     to right,
-    /* rgb(0, 0, 0, 0.7), rgba(255, 255, 255, 0.9), */ rgba(6, 83, 182, 1),
-    rgb(0, 0, 0, 0.9)
+    /* rgb(0, 0, 0, 0.7),*/ rgba(255, 255, 255, 0.9),
+    rgba(6, 83, 182, 0.5),
+    black
   ) !important;
+
+  /* background: linear-gradient( */
+    /* to right, */
+    /* rgb(0, 0, 0, 0.7), rgba(255, 255, 255, 0.9), */ 
+    /* rgba(6, 83, 182, 1), */
+    /* rgb(0, 0, 0, 0.9) */
+  /* ) !important; */
   color: white;
 }
 

@@ -5,7 +5,8 @@ const tl = gsap.timeline({ defaults: { ease: "power1.out" } });
 tl.to(".text-right", { y: "0%", duration: 1.5, stagger: 0.25 });
 tl.to(".hide-left", { x: "0%", duration: 1.5 },"-=0.75");
 tl.to(".text-left", { y: "0%", duration: 0.75, stagger: 0.75 },"-=0.5");
-tl.to(".intro", { y: "-100%", duration: 1.75, delay: 1.5  });
+tl.to(".intro", { y: "-100%", duration: 0.1, delay: 0.1  });
+// tl.to(".intro", { y: "-100%", duration: 1.75, delay: 1.5  });
 // tl.to(".intro", { y: "-100%", duration: 1, delay: 0.5  });
 
 
@@ -82,9 +83,9 @@ tl.to(".intro", { y: "-100%", duration: 1.75, delay: 1.5  });
 gsap.to("#AutoElektronika-title",{
   scrollTrigger:{
     trigger: "#AutoElektronika",
-    start: "top bottom",
+    start: "top center",
     endtrigger: "#AutoElektronika-left",
-    end:"bottom 90%",
+    end:"top 40%",
     scrub: 1,
     // pin: true,
     // pinSpacing: false,
