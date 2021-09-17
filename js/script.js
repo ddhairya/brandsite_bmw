@@ -128,9 +128,9 @@ gsap.to("#AutoElektronika-title",{
 gsap.to("#Kodowanie-title",{
   scrollTrigger:{
     trigger: "#Kodowanie",
-    start: "top bottom",
+    start: "top center",
     endtrigger: "#Kodowanie-left",
-    end:"bottom 90%",
+    end:"top 40%",
     scrub: 1,
     // pin: true,
     // pinSpacing: false,
@@ -173,9 +173,9 @@ gsap.to("#Kodowanie-title",{
 gsap.to("#Doposażanie-title",{
   scrollTrigger:{
     trigger: "#Doposażanie",
-    start: "top bottom",
+    start: "top center",
     endtrigger: "#Doposażanie-title",
-    end:"bottom 90%",
+    end:"top 40%",
     scrub: 1,
     // pin: true,
     // pinSpacing: false,
@@ -219,9 +219,9 @@ gsap.to("#Doposażanie-title",{
 gsap.to("#Klimatyzacja-title",{
   scrollTrigger:{
     trigger: "#Klimatyzacja",
-    start: "top bottom",
+    start: "top center",
     endtrigger: "#Klimatyzacja-title",
-    end:"bottom 90%",
+    end:"top 40%",
     scrub: 1,
     // pin: true,
     // pinSpacing: false,
@@ -251,9 +251,9 @@ gsap.to("#Klimatyzacja-title",{
 gsap.to("#Map-title",{
   scrollTrigger:{
     trigger: "#Map",
-    start: "top bottom",
+    start: "top center",
     endtrigger: "#Map-title",
-    end:"bottom 90%",
+    end:"top 40%",
     scrub: 1,
     // pin: true,
     // pinSpacing: false,
@@ -301,9 +301,9 @@ gsap.to("#Map-title",{
 gsap.to("#Uslugi-title",{
   scrollTrigger:{
     trigger: "#Uslugi",
-    start: "top bottom",
+    start: "top center",
     endtrigger: "#Uslugi-title",
-    end:"bottom 90%",
+    end:"top 40%",
     scrub: 1,
     // pin: true,
     // pinSpacing: false,
@@ -350,6 +350,21 @@ gsap.to("#cennik-title",{
     trigger: "#cennik",
     start: "top center",
     endtrigger: "#cennik",
+    end:"top 40%",
+    scrub: 1,
+    // pin: true,
+    // pinSpacing: false,
+    toggleActions:"restart pause reverse pause"
+  },
+  x:"0%",
+  duration: 1
+})
+
+gsap.to("#dpf-title",{
+  scrollTrigger:{
+    trigger: "#dpf",
+    start: "top center",
+    endtrigger: "#dpf",
     end:"top 40%",
     scrub: 1,
     // pin: true,
