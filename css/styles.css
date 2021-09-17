@@ -165,6 +165,12 @@ ul{
   .service-list {
     padding: 5rem 0.5rem 0.5rem 0.5rem !important;
   }
+  .Doposażanie-left-img {
+    height: 250px !important;
+  }
+  .Map-right-img {
+    height: 250px !important;
+  }
 }
 
 .tab-cont {
