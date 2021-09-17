@@ -112,6 +112,7 @@ ul{
 .nav-link {
   color: white !important;
   font-weight: bold;
+  text-align: center !important;
 }
 .nav-link:hover {
   color: #0653b6 !important;
