@@ -171,6 +171,10 @@ ul{
   .Map-right-img {
     height: 250px !important;
   }
+  .cennik-main{
+    margin: 0rem !important;
+    margin-top: 2.5rem !important;
+  }
 }
 
 .tab-cont {
@@ -335,3 +339,21 @@ ul{
   background-size: cover;
   padding-top: 4rem;
 } */
+.cennik-main{
+  display: flex;
+  justify-content: space-evenly;
+  margin: 2rem;
+}
+.cennik-cont{
+  width: 64px;
+}
+.cennik-img{
+  height: 64px;
+  padding: 0.5rem;
+}
+.cennik-txt{
+  margin: 2rem 0rem 0rem 0rem;
+  text-align: center !important;
+  color: #0653b6;
+  font-weight: bold;
+}
