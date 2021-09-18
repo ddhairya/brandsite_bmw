@@ -175,6 +175,9 @@ ul{
     margin: 0rem !important;
     margin-top: 2.5rem !important;
   }
+  .about-img{
+    padding: 1rem !important;
+  }
 }
 
 .tab-cont {
@@ -355,6 +358,26 @@ ul{
   text-align: center !important;
   color: #0653b6;
   font-weight: bold;
+}
+.about-img{
+  width: 100%;
+  padding: 5rem;
+}
+.about-text{
+  text-align: center;
+}
+.about-connect{
+  text-align: center;
+}
+.about-nav{
+  text-align: center;
+  text-decoration: none;
+}
+.about-navlink{
+  color: black !important;
+}
+.about-download{
+  margin: 0.5rem;
 }
 .space{
   margin-bottom: 10rem;
