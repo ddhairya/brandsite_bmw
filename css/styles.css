@@ -379,6 +379,10 @@ ul{
 .about-download{
   margin: 0.5rem;
 }
+.contact{
+  padding-top: 5rem;
+  align-self: center;
+}
 .space{
   margin-bottom: 10rem;
 }
