@@ -29,7 +29,7 @@ ul{
 }
 .intro-text-right {
   background-color: black;
-  width: 50%;
+  
   height: 100%;
   justify-content: center;
   align-items: flex-end;
@@ -58,7 +58,8 @@ ul{
     margin-right: 20%;
 }
 .hide-right {
-  
+  width: 100%;
+  text-align: center;
   background: black;
   overflow: hidden;
   padding-right: 1rem;
@@ -87,7 +88,7 @@ ul{
 }
 .landing {
   width: 100%;
-  height: 100vh;
+  height: 60vh;
   background-image: url(../images/cover.jpg);
   background-size: cover;
   padding-top: 4rem;
@@ -165,14 +166,23 @@ ul{
   .service-det-title {
     width: 100% !important;
   }
+  .card {
+    border: 0px !important;
+  }
   .col{
     padding: 0rem !important;
   }
   .service{
-    padding: 0.5rem 0rem !important;
+    padding: 0rem !important;
+  }
+  .service-img{
+    margin: 1rem;
+  }
+  .col{
+    padding-right: 0rem !important;
   }
   .service-list {
-    padding: 5rem 0.5rem 0.5rem 0.5rem !important;
+    padding: 2rem 0.5rem 0.5rem 0.5rem !important;
   }
   .Doposażanie-left-img {
     height: 250px !important;
@@ -196,7 +206,7 @@ ul{
   background-color: transparent !important;
 }
 .service-list {
-  padding: 5rem 1rem 1rem 2rem;
+  padding: 2rem 1rem 1rem 2rem;
 }
 .service-link {
   color: #0653b6 !important;
@@ -389,6 +399,9 @@ ul{
 }
 .about-download{
   margin: 0.5rem;
+}
+.download{
+
 }
 .contact{
   padding-top: 5rem;
