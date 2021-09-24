@@ -88,7 +88,7 @@ ul{
 }
 .landing {
   width: 100%;
-  height: 60vh;
+  height: 65vh;
   background-image: url(../images/cover.jpg);
   background-size: cover;
   padding-top: 4rem;
@@ -399,9 +399,6 @@ ul{
 }
 .about-download{
   margin: 0.5rem;
-}
-.download{
-
 }
 .contact{
   padding-top: 5rem;
