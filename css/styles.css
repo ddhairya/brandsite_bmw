@@ -3,12 +3,11 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'Urbanist', sans-serif;
+  font-family: "Montserrat", sans-serif;
   text-align: justify;
 }
-ul{
-  margin-left: 1rem  !important;
-
+ul {
+  margin-left: 1rem !important;
 }
 .intro {
   background: black;
@@ -24,19 +23,19 @@ ul{
 }
 .introtext {
   font-size: 3rem;
-  font-family: 'Urbanist', sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-weight: 400;
 }
 .intro-text-right {
   background-color: black;
-  
+
   height: 100%;
   justify-content: center;
   align-items: flex-end;
   display: flex;
   flex-direction: column;
   color: white;
-  font-family: "Arimo", sans-serif;
+  font-family: "Montserrat", sans-serif;
 }
 .intro-text-left {
   background-color: black !important;
@@ -47,7 +46,7 @@ ul{
   display: flex;
   flex-direction: column;
   color: white;
-  font-family: "Arimo", sans-serif;
+  font-family: "Montserrat", sans-serif;
 }
 .hide-right-center {
   width: 100%;
@@ -55,7 +54,7 @@ ul{
   overflow: hidden;
   padding-right: 1rem;
   text-align: end;
-    margin-right: 20%;
+  margin-right: 20%;
 }
 .hide-right {
   width: 100%;
@@ -169,16 +168,16 @@ ul{
   .card {
     border: 0px !important;
   }
-  .col{
+  .col {
     padding: 0rem !important;
   }
-  .service{
+  .service {
     padding: 0rem !important;
   }
-  .service-img{
+  .service-img {
     margin: 1rem;
   }
-  .col{
+  .col {
     padding-right: 0rem !important;
   }
   .service-list {
@@ -190,12 +189,15 @@ ul{
   .Map-right-img {
     height: 250px !important;
   }
-  .cennik-main{
+  .cennik-main {
     margin: 0rem !important;
     margin-top: 2.5rem !important;
   }
-  .about-img{
+  .about-img {
     padding: 1rem !important;
+  }
+  .form-group {
+    width: 100% !important;
   }
 }
 
@@ -222,7 +224,6 @@ ul{
 .col {
   margin: 1rem 0rem !important;
   padding: 0rem 2rem !important;
-
 }
 
 .service-det {
@@ -231,7 +232,7 @@ ul{
   margin-right: 0px !important;
 }
 .service-det-title {
-  font-family: 'Urbanist', sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-weight: 400;
   padding: 1rem 1rem 1rem 2rem;
   text-align: center !important;
@@ -253,10 +254,10 @@ ul{
   ) !important;
 
   /* background: linear-gradient( */
-    /* to right, */
-    /* rgb(0, 0, 0, 0.7), rgba(255, 255, 255, 0.9), */ 
-    /* rgba(6, 83, 182, 1), */
-    /* rgb(0, 0, 0, 0.9) */
+  /* to right, */
+  /* rgb(0, 0, 0, 0.7), rgba(255, 255, 255, 0.9), */
+  /* rgba(6, 83, 182, 1), */
+  /* rgb(0, 0, 0, 0.9) */
   /* ) !important; */
   color: white;
 }
@@ -361,49 +362,60 @@ ul{
   background-size: cover;
   padding-top: 4rem;
 } */
-.cennik-main{
+.cennik-main {
   display: flex;
   justify-content: space-evenly;
   margin: 2rem;
   width: 90% !important;
 }
-.cennik-cont{
+.cennik-cont {
   width: 64px;
 }
-.cennik-img{
+.cennik-img {
   height: 64px;
   padding: 0.5rem;
+  text-align: center;
 }
-.cennik-txt{
+.cennik-txt {
   margin: 2rem 0rem 0rem 0rem;
   text-align: center !important;
   color: #0653b6;
   font-weight: bold;
 }
-.about-img{
+.about-img {
   width: 100%;
   padding: 5rem;
 }
-.about-text{
+.about-text {
   text-align: center;
 }
-.about-connect{
+.about-connect {
   text-align: center;
 }
-.about-nav{
+.about-nav {
   text-align: center;
   text-decoration: none;
 }
-.about-navlink{
+.about-navlink {
   color: black !important;
 }
-.about-download{
+.about-download {
   margin: 0.5rem;
 }
-.contact{
+.contact {
   padding-top: 5rem;
   align-self: center;
 }
-.space{
+.about {
+  padding: 2rem;
+  align-self: center;
+}
+.space {
   margin-bottom: 10rem;
+}
+.lightgreybg {
+  background-color: lightgrey;
+}
+.form-group {
+  width: 60%;
 }
