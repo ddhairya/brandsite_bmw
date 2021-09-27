@@ -415,6 +415,7 @@ ul {
 }
 .lightgreybg {
   background-color: lightgrey;
+  border-radius: 8px;
 }
 .form-group {
   width: 60%;
