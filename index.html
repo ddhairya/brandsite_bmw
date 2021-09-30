@@ -525,19 +525,19 @@
           <form method="POST" action="/backend/index.php">
             <div class="form-group">
               <label for="exampleFormControlInput1">Adres email</label>
-              <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="twoj@adrespocztowy.com">
+              <input type="email" class="form-control" name="c_email"  placeholder="twoj@adrespocztowy.com">
             </div>
             <div class="form-group">
               <label for="exampleFormControlInput1">Numer kontaktowy</label>
-              <input class="form-control" type="text" placeholder="xxx xxx xxx">
+              <input class="form-control" type="text" name="c_phone" placeholder="xxx xxx xxx">
             </div>
             <div class="form-group">
               <label for="exampleFormControlInput1">Imię i Nazwisko</label>
-              <input class="form-control" type="text" placeholder="Twoje Imię">
+              <input class="form-control" type="text" name="c_name" placeholder="Twoje Imię">
             </div>
             <div class="form-group">
               <label for="exampleFormControlTextarea1">Wiadomość</label>
-              <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="Jak możemy Tobie dzisiaj pomóc?"></textarea>
+              <textarea class="form-control" name="c_msg" rows="3" placeholder="Jak możemy Tobie dzisiaj pomóc?"></textarea>
             </div>
             <div class="form-group s">
               <button type="submit" class="btn btn-primary">Wyślij</button>
