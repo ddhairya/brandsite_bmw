@@ -87,6 +87,7 @@ ul {
 }
 .service-det-title {
   transform: translateX(-100%);
+  margin-top: 5vh !important;
 }
 .landing {
   width: 100%;
