@@ -48,6 +48,9 @@ ul {
   color: white;
   font-family: "Montserrat", sans-serif;
 }
+.intro_logo {
+  width: 72px;
+}
 .hide-right-center {
   width: 100%;
   background: black;
@@ -421,10 +424,13 @@ ul {
   width: 60%;
   text-align: center;
 }
-.sub-btn{
+.sub-btn {
   text-align: center;
 }
-.copyright{
+.copyright {
   text-align: right;
   padding: 1rem;
+}
+.cennik-view {
+  margin-top: 15vh;
 }
