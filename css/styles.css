@@ -130,6 +130,7 @@ ul {
 .nav-link:hover {
   color: #0653b6 !important;
   font-weight: 800;
+  text-decoration: none !important;
 }
 
 .fixed-top {
@@ -216,7 +217,14 @@ ul {
 }
 .service-link {
   color: #0653b6 !important;
+  text-decoration: none !important;
 }
+.service-link:hover {
+  color: #0653b6 !important;
+  font-weight: 800;
+  text-decoration: none !important;
+}
+
 .service {
   align-items: center !important;
   padding: 2rem;
