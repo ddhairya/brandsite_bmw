@@ -21,6 +21,12 @@ ul {
   align-items: center;
   z-index: 101;
 }
+.row{
+  justify-content: center !important;
+}
+.row-cols-lg-3{
+  flex: 0 0 25% !important;
+}
 .intro-log {
   position: fixed;
   top: 10%;
@@ -180,6 +186,7 @@ ul {
   }
   .col {
     padding: 0rem !important;
+
   }
   .service {
     padding: 0rem !important;
@@ -431,7 +438,7 @@ ul {
   margin-bottom: 10rem;
 }
 .lightgreybg {
-  background-color: rgba(6, 83, 182, 0.1);
+  background-color: rgba(6, 83, 182, 0.2);
   border-radius: 8px;
 }
 .form-group {
