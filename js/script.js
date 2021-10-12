@@ -7,6 +7,7 @@ tl.to(".text-right", { y: "0%", duration: 1.5, stagger: 0.25 });
 tl.to(".text-left", { y: "0%", duration: 0.75, stagger: 0.75 },"-=0.5");
 // testing
 tl.to(".intro", { y: "-100%", duration: 0.1, delay: 0.1  });
+
 // production
 // tl.to(".intro", { y: "-100%", duration: 1.75, delay: 1.5  });
 // tl.to(".intro", { y: "-100%", duration: 1, delay: 0.5  });

@@ -21,6 +21,11 @@ ul {
   align-items: center;
   z-index: 101;
 }
+.intro-log {
+  position: fixed;
+  top: 10%;
+  left: 10%;
+}
 .introtext {
   font-size: 3rem;
   font-family: "Montserrat", sans-serif;
