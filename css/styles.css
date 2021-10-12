@@ -431,7 +431,7 @@ ul {
   margin-bottom: 10rem;
 }
 .lightgreybg {
-  background-color: lightgrey;
+  background-color: rgba(6, 83, 182, 0.1);
   border-radius: 8px;
 }
 .form-group {
