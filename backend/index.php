@@ -20,7 +20,7 @@ $mail = new PHPMailer(true);
 
 
 $message="<html><body>";
-$message .="<div> The vistor ".$c_name." with contact details no.".$c_name." and ".$c_email." have left a message </div>";
+$message .="<div> Klient ".$c_name."  jego numer kontaktowy to ".$c_phone." i mail ".$c_email." zostawił/a wiadomość </div>";
 $message .="<div>".$c_msg."</div>";
 $message .="<div>".$time."</div>";
 $message .="</body></html>";
@@ -29,25 +29,26 @@ try {
     //Server settings
     // $mail->SMTPDebug = SMTP::DEBUG_SERVER;                      //Enable verbose debug output
     $mail->isSMTP();                                            //Send using SMTP
-    $mail->Host       = 'smtp-mail.outlook.com';                     //Set the SMTP server to send through
+    $mail->Host       = 'smtp.gmail.com';                     //Set the SMTP server to send through
     $mail->SMTPAuth   = true;                                   //Enable SMTP authentication
-    $mail->Username   = 'alahliamso@hotmail.com';                     //SMTP username
-    $mail->Password   = 'password';                               //SMTP password
+    $mail->Username   = 'bmworgpl@gmail.com';                     //SMTP username
+    $mail->Password   = 'password123';                               //SMTP password
     $mail->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS;            //Enable implicit TLS encryption
-    $mail->Port       = 587;                                    //TCP port to connect to; use 587 if you have set `SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS`
+    //$mail->SMTPSecure = false;
+	$mail->Port       = 587;                                    //TCP port to connect to; use 587 if you have set `SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS`
 
     //Recipients
-    $mail->setFrom('alahliamso@hotmail.com', 'Mailer');
-    $mail->addAddress('d_dhairya@yahoo.com', 'User');     //Add a recipient
+    $mail->setFrom('bmworgpl@gmail.com', 'Mailer');
+    $mail->addAddress('biuro@bmw.org.pl', 'Biuro');     //Add a recipient
   
     //Content
     $mail->isHTML(true);                                  //Set email format to HTML
-    $mail->Subject = 'Here is the subject';
+    $mail->Subject = 'Nowa wiadomość od klienta';
     $mail->Body    = $message;
     $mail->AltBody = strip_tags($message);
 
     $mail->send();
-    header("location: https://bmw.org.pl");
+    echo "OK";
 
 } catch (Exception $e) {
     echo "Message could not be sent. Mailer Error: {$mail->ErrorInfo}";

@@ -21,21 +21,10 @@ ul {
   align-items: center;
   z-index: 101;
 }
-.row{
-  justify-content: center !important;
-}
-.row-cols-lg-3{
-  flex: 0 0 25% !important;
-}
-/* .intro-log {
-  position: fixed;
-  top: 10%;
-  left: 10%;
-} */
 .introtext {
   font-size: 3rem;
-  font-family: "Montserrat", sans-serif;
-  font-weight: 400;
+  font-family: "Montserrat", sans-serif;ń
+  font-weight: 900;
 }
 .intro-text-right {
   background-color: black;
@@ -58,9 +47,6 @@ ul {
   flex-direction: column;
   color: white;
   font-family: "Montserrat", sans-serif;
-}
-.intro_logo {
-  width: 72px;
 }
 .hide-right-center {
   width: 100%;
@@ -98,11 +84,10 @@ ul {
 }
 .service-det-title {
   transform: translateX(-100%);
-  margin-top: 5vh !important;
 }
 .landing {
   width: 100%;
-  height: 65vh;
+  height: 75vh;
   background-image: url(../images/cover.jpg);
   background-size: cover;
   padding-top: 4rem;
@@ -141,22 +126,23 @@ ul {
 .nav-link:hover {
   color: #0653b6 !important;
   font-weight: 800;
-  text-decoration: none !important;
 }
 
 .fixed-top {
   z-index: 100 !important ;
 }
 
-.bglight {
+.bglight { background-color: black;
+  opacity: 78%;
   /* background-color: red !important; */
 
-  background-image: linear-gradient(
-    to right,
-    /* rgb(0, 0, 0, 0.7),*/ rgba(255, 255, 255, 0.9),
+  /* background-image: linear-gradient(
+    /* to right, */
+    /* rgb(0, 0, 0, 0.7),*/ 
+    /* rgba(255, 255, 255, 0.9),
     rgba(6, 83, 182, 0.2),
-    black
-  ) !important;
+    black */
+  /* ) !important; * */
 }
 
 @media (max-width: 992px) {
@@ -186,7 +172,6 @@ ul {
   }
   .col {
     padding: 0rem !important;
-
   }
   .service {
     padding: 0rem !important;
@@ -219,7 +204,7 @@ ul {
 }
 
 .tab-cont {
-  padding-top: 1rem;
+  padding-top: 0rem;
 }
 .card {
   background-color: transparent !important;
@@ -228,19 +213,11 @@ ul {
   padding: 2rem 1rem 1rem 2rem;
 }
 .service-link {
-  text-align: center;
   color: #0653b6 !important;
-  text-decoration: none !important;
 }
-.service-link:hover {
-  color: #0653b6 !important;
-  font-weight: 800;
-  text-decoration: none !important;
-}
-
 .service {
   align-items: center !important;
-  padding: 2rem;
+  padding: 0.4rem;
 }
 
 .service-img {
@@ -262,21 +239,23 @@ ul {
   padding: 1rem 1rem 1rem 2rem;
   text-align: center !important;
   border-radius: 0.2rem;
-  width: 80%;
+  width: 100%;
   margin: auto;
+  background-color:#9ca3aa;
   /* background: rgba(6, 83, 182, 0.9); */
   /* background-image: linear-gradient(
     to right,
     rgb(0, 0, 0, 0.7), rgba(255, 255, 255, 0.9),
     rgba(6, 83, 182, 1), black
   ) !important; */
-  background-image: linear-gradient(
+  /* background-image: linear-gradient(
     to right,
-    /* rgb(0, 0, 0, 0.7),*/ rgba(255, 255, 255, 0.9),
+    rgb(0, 0, 0, 0.7),*/ 
+    /* rgba(255, 255, 255, 0.9),
     rgba(6, 83, 182, 0.5),
     black,
     rgba(255, 255, 255, 0.9)
-  ) !important;
+  ) !important; */
 
   /* background: linear-gradient( */
   /* to right, */
@@ -359,7 +338,8 @@ ul {
   margin: 1rem;
   border-radius: 5rem;
   background-size: cover;
-  /* transform: translateX(-100%); */
+  /* transform: translateX(-100
+  %); */
 }
 .Klimatyzacja-left {
   text-align: justify;
@@ -408,8 +388,8 @@ ul {
   font-weight: bold;
 }
 .about-img {
-  width: 80%;
-  padding: 0.5rem;
+  width: 100%;
+  padding: 5rem;
 }
 .about-text {
   text-align: center;
@@ -439,35 +419,19 @@ ul {
   margin-bottom: 10rem;
 }
 .lightgreybg {
-  background-color: rgba(6, 83, 182, 0.2);
+  background-color: lightgrey;
   border-radius: 8px;
 }
 .form-group {
   width: 60%;
   text-align: center;
 }
-.sub-btn {
+.sub-btn{
   text-align: center;
 }
-.copyright {
+.copyright{
   background-color: black;
+  text-align: center;
+  padding: 0.6rem;
   color: white;
-  text-align: right;
-  padding: 1rem;
-}
-.cennik-view {
-  margin-top: 15vh;
-}
-#thank-you-message {
-  display: none;
-}
-
-#thank-you-message.show {
-  display: block;
-}
-
-#submitButton.dis{
-  cursor: not-allowed;
-  pointer-events: none;
-  /* display: none; */
 }

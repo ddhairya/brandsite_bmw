@@ -4,10 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./css/styles.css" />
-    <!-- <link
-      href="https://fonts.googleapis.com/css2?family=Heebo:wght@500;700&family=Lobster&display=swap"
-      rel="stylesheet"
-    /> -->
+    
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400&display=swap" rel="stylesheet">
@@ -24,17 +21,42 @@
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.2/TweenMax.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.2/TimelineMax.min.js"></script>
-    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.7.1/ScrollTrigger.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.7.1/gsap.min.js"></script> -->
 
     <!-- ScrollMagic -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.6/ScrollMagic.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.6/plugins/animation.gsap.min.js"></script>
-    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.8/ScrollMagic.min.js" integrity="sha512-8E3KZoPoZCD+1dgfqhPbejQBnQfBXe8FuwL4z/c8sTrgeDMFEnoyTlH3obB4/fV+6Sg0a0XF+L/6xS4Xx1fUEg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script> -->
-    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.8/plugins/animation.gsap.js" integrity="sha512-judXDFLnOTJsUwd55lhbrX3uSoSQSOZR6vNrsll+4ViUFv+XOIr/xaIK96soMj6s5jVszd7I97a0H+WhgFwTEg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script> -->
     
     <link rel="icon" href="./images/bmw.png">
     <title>Autoelektronika Grzegorz Kuncik</title>
+    <script>
+      function ajaxpost () {
+        const thankYouMessage = document.querySelector('#thank-you-message');
+        document.querySelector('#submitButton').disabled = true;
+        thankYouMessage.classList.add('show');
+        // submitButton.classList.add('dis');
+        // (A) GET FORM DATA
+        var form = document.getElementById("myForm");
+        var data = new FormData(form);
+      
+        // (B) AJAX REQUEST
+        // (B1) POST DATA TO SERVER, RETURN RESPONSE AS TEXT
+        // fetch("http://localhost:80/bmw/index.php", { method:"POST", body:data })
+        fetch("https://bmw.org.pl/backend/index.php", { method:"POST", body:data })
+        .then(res=>res.text())
+      
+        // (B2) SHOW MESSAGE ON SERVER RESPONSE
+        .then((response) => {
+          console.log(response);
+          
+        })
+      
+        // (B3) OPTIONAL - HANDLE FETCH ERROR
+        .catch((err) => { console.error(err); });
+      
+        // (C) PREVENT FORM SUBMIT
+        return false;
+      }
+    </script>
   </head>
   <body>
     <div id="home" class="landing">
@@ -55,10 +77,10 @@
                   <a class="nav-link" href="#service" >Usługi</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="#cennik" >Cennik</a>
+                  <a class="nav-link" href="#about" >O Firmie</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="#about" >O Firmie</a>
+                  <a class="nav-link" href="#cennik" >Cennik</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="#contact" >Kontakt</a>
@@ -68,28 +90,27 @@
 
             
         </nav>
-        <div class="big-text">BMWwwwwwwwww</div>
+        <div class="big-text">BMW</div>
     </div>
     <div class="intro">
         <div class="intro-text-right">
-            <h3 class="hide-right">
+          
+          <h3 class="hide-right mb-5">
+            <span class="text-right introtext"><img class="intro_logo" src="./images/BMW_logo_blue.svg"/></span>
+          </h3>  
+          <h3 class="hide-right">
             <span class="text-right introtext">Doświadczenie</span>
-            </h3>
-            <br>
-            <h3 class="hide-right ">
+          </h3>
+          <br>
+          <h3 class="hide-right ">
               <span class="text-right introtext">i</span>
-            </h3>
-            <br>
-            <h3 class="hide-right">
+          </h3>
+          <br>
+          <h3 class="hide-right">
               <span class="text-right introtext">Profesjonalizm.</span>
-            </h3>
+          </h3>
            
-        </div>
-        
-        <div class="intro-log">
-          <img class="intro_logo" src="./images/BMW_logo_blue.svg"/>
-        </div>
-        
+        </div>        
     </div>
 
     
@@ -171,9 +192,8 @@
       </div>
       
       <div class="service-det service-list row  row-cols-1 row-cols-md-2 row-cols-lg-2" >
-      
-        
         <div class="col AutoElektronika-left " id="AutoElektronika-left">
+          
           <p class="AutoElektronika-left-text">
             Specjalizujemy się w poszukiwaniu uszkodzeń oraz naprawach współczesnej elektroniki samochodowej.
             <br>
@@ -190,14 +210,8 @@
             Rozwiązujemy problemy związane z brakiem mocy silnika, trudnym rozruchem, niezapalaniem, nierówną pracą silnika, regulacją wolnych obrotów, dużym zużyciem paliwa itp. Usuwamy usterki związane z układami zapłonowymi, dolotowymi (turbosprężarki, recyrkulacja spalin EGR), z układami zasilania ( wtryskiwacze, pompy), z układami wydechowymi (filtry cząstek stałych FAP/DPF, katalizatory), systemami ABS, ESP, wszelkimi systemami bezpieczeństwa czynnego i biernego jak i komfortu.
           </p>
         </div>
-
       </div>
-
     </div>
-
-
-
-
 
     <div class="service-list " id="Kodowanie" > 
       <div class="service-det-title " id="Kodowanie-title">
@@ -207,8 +221,6 @@
       </div>
       
       <div class="service-det service-list row  row-cols-1 row-cols-md-2 row-cols-lg-2" >
-      
-        
         <div class="col Kodowanie-left " id="Kodowanie-left">
           <p class="Kodowanie-left-text">
             Jak powszechnie wiadomo samochody BMW są bardzo zaawansowane technologicznie. Ze względu na ogromną rozpiętość wersji wyposażenia samochodów, producenci zaimplementowali do wszystkich sterowników możliwość tzw kodowania. Polega ono na włączaniu lub wyłączaniu rozmaitych funkcji dodatkowych . Jesteśmy w stanie dostosować te kody indywidualnie dla każdego klienta. 
@@ -223,9 +235,7 @@
             <li>automatyczne składanie lusterek z pilota po zamknięciu auta</li>
           </ul>
         </div>
-
       </div>
-
     </div>
 
     <div class=" service-list" id="Doposażanie">
@@ -235,8 +245,6 @@
         </h1>
       </div>
       <div class="service-det service-list row  row-cols-1 row-cols-md-2 row-cols-lg-2" >
-      
-        
         <div class="col Doposażanie-left " id="Doposażanie-left">
           <div class="Doposażanie-left-cont">
             <div class="Doposażanie-left-text">
@@ -246,8 +254,7 @@
             </div>
             <div class="Doposażanie-left-img" id="Doposażanie-left-img">
             </div> 
-          </div>
-          
+          </div>          
         </div>
         
         <div class="col Doposażanie-right" id="Doposażanie-right">
@@ -266,20 +273,17 @@
           <p>
             Jeżeli masz jakiś inny pomysł na zwiększenie komfortu i wartości swojego auta poprzez doposażenie w systemy BMW prosimy o kontakt. Jesteśmy w stanie wykonać praktycznie każdą modyfikację.
           </p>
-        </div>
-      
+        </div>      
       </div>
     </div>
+
     <div class="service-list" id="Klimatyzacja">
       <div class="service-det-title " id="Klimatyzacja-title">
         <h1 class="text-center">
           Klimatyzacja
         </h1>
       </div>
-
       <div class="service-det service-list row  row-cols-1 row-cols-md-2 row-cols-lg-2 " id="Klimatyzacja-det" >
-      
-        
         <div class="col Klimatyzacja-left " id="Klimatyzacja-left">
           <p >
             Klimatyzacja samochodowa w autach marki BMW  należy do jednych z najnowocześniejszych wśród wszystkich grup i modeli pojazdów. Jednak, aby służyła możliwie jak najlepiej dla każdego kierowcy, warto poddać ją okresowym przeglądom a w razie konieczności, aby skorzystać z kompleksowego serwisu klimatyzacji samochodowej.<br><br>
@@ -296,7 +300,6 @@
             <li>płukanie lub regeneracja układu klimatyzacji samochodowej</li>
             <li>regeneracja kompresorów</li>
           </ul>
-          
         </div>
         <div class="col Klimatyzacja-right" id="Klimatyzacja-right">
           <p>
@@ -310,9 +313,7 @@
             Serdecznie zapraszamy do korzystania z naszego serwisu BMW. Zapewniamy, że diagnozujemy i naprawiamy klimatyzację na najwyższym poziomie.
           </p>
         </div>
-        
       </div>
-      
     </div>
 
     <div class="service-list" id="Map">
@@ -321,10 +322,7 @@
           Aktualizacja Map Nawigacyjnych
         </h1>
       </div>
-
       <div class="service-det service-list row  row-cols-1 row-cols-md-2 row-cols-lg-2 " >
-      
-        
         <div class="col Map-left " id="Map-left">
           <p >
             Jeśli Twoja wersja map w oryginalnym systemie nawigacyjnym BMW jest nieaktualna, mamy dla Ciebie rozwianie. Jesteśmy w stanie zaktualizować praktycznie wszystkie mapy do najnowszej wersji jaką aktualnie wypuściła firma BMW. 
@@ -336,9 +334,7 @@
         <div class="col Map-right" id="Map-right">
           <div class="Map-right-img" id="Map-right-img"></div>
         </div>
-        
       </div>
-      
     </div>
     
     <div class="service-list" id="Uslugi">
@@ -347,10 +343,7 @@
           Usługi Online
         </h1>
       </div>
-
       <div class="service-det service-list row  row-cols-1 row-cols-md-3 row-cols-lg-3" >
-      
-        
         <div class="col Uslugi-text " id="Uslugi-top">
           <p >
             Zajmujemy się szeroko pojętą  elektroniką samochodową w pojazdach marki BMW już kilkanaście lat. Jako jedyni na rynku opracowaliśmy autorski system kodowania, programowania i diagnostyki ONLINE przez sieć Internet za pomocą Twojego komputera.
@@ -371,11 +364,9 @@
             <br>
             <br>
             <br>
-            
           </p>
         </div>
         <div class="col Uslugi-text " id="Uslugi-top">
-          
           <p >
             Często zdarza się również że po wymianie jakiejś uszkodzonej części na nową lub używaną, nie chce ona współpracować  z samochodem. Przyczyną tego stanu rzeczy jest to że większość części elektronicznych trzeba po montażu dokodować do auta i wprowadzić wszystkie wymagane funkcje. Jeśli np. po wymianie sterownika lampy na drugi, nie świeci LED, żaden problem zrobimy to w kilkanaście minut przez internet.
             <br>
@@ -387,16 +378,13 @@
             Zapraszamy do współpracy warsztaty samochodowe.
           </p>
         </div>
-
       </div>
       <div class="about-nav download">
         <a class="nav-link about-navlink" href="./files/aa.exe">
           <img class="about-download" src="./images/download.png"> Pobierz program
         </a>
       </div>
-
     </div>
-
     
     <div class="service-list" id="dpf">
       <div class="service-det-title " id="dpf-title">
@@ -404,7 +392,6 @@
           DPF
         </h1>
       </div>
-
       <div class=" service-det service-list row  row-cols-1 row-cols-md-1 row-cols-lg-1 " >
         <div class="col">
           <p>
@@ -424,18 +411,12 @@
       </div>
     </div>
 
-
-
-
-
-    <div class="service-list " id="cennik">
-
-      <div class="service-det-title " id="cennik-title">
+    <div class="service-list mb-5" id="about">
+      <div class="service-det-title " id="about-title">
         <h1 class="text-center">
-          Cennik
+          O Firmie
         </h1>
       </div>
-
       <div class="service-det service-list row  row-cols-1 row-cols-md-1 row-cols-lg-1 " >
         <div class="col">
           <p>
@@ -443,58 +424,62 @@
   
             Dlatego też zazwyczaj orientacyjny kosztorys  naprawy jesteśmy w stanie podać dopiero po wstępnej analizie problemu, diagnostyce komputerowej i już poświęconym czasie.
           </p>
-
         </div>
-        
-        <div class="cennik-main row  row-cols-1 row-cols-md-1 row-cols-lg-5">
+      </div>
+    </div>
 
+    <div class="service-list " id="cennik">
+      <div class="service-det-title " id="cennik-title">
+        <h1 class="text-center">
+          Cennik
+        </h1>
+      </div>
+      <div class="service-det service-list row  row-cols-1 row-cols-md-1 row-cols-lg-1 " >
+        <div class="col">
+          <p>
+            Elektronika samochodowa to nie piekarnia. Niestety nie ma możliwości wycenienia każdej usterki przed naprawą. W tej branży mnogość możliwości i potencjalnych przyczyn nie zna granic.  Często błaha usterka rośnie do rangi problemu i z przewidywanej 1 godziny na naprawę robi się kilkanaście. Zdarza się również wręcz odwrotnie. Z pozoru skomplikowaną rzecz udaj się zlokalizować i naprawić w kilkanaście minut. Praktycznie każdy przypadek jest inny.
+  
+            Dlatego też zazwyczaj orientacyjny kosztorys  naprawy jesteśmy w stanie podać dopiero po wstępnej analizie problemu, diagnostyce komputerowej i już poświęconym czasie.
+          </p>
+        </div>
+        <div class="cennik-main row  row-cols-1 row-cols-md-3 row-cols-lg-5">
           <div class="cennik-cont col">
             <div class="cennik-img">
               <img class="cennik-img" src="images/diagnostyka.png" />
             </div>
             <p class="cennik-txt"> Diagnostyka <br> 60zł</p>
-          </div>
-          
+          </div>          
           <div class="cennik-cont col">
             <div class="cennik-img">
               <img class="cennik-img" src="images/klimatyzacji.png" />
             </div>
             <p class="cennik-txt">Diagnostyka <br> 180zł-250zł</p>
-          </div>
-          
+          </div>          
           <div class="cennik-cont col">
             <div class="cennik-img">
               <img class="cennik-img" src="images/nawigacyjnych.png" />
             </div>
             <p class="cennik-txt"> Nawigacja <br> 150zł-300zł</p>
           </div>
-
           <div class="cennik-cont col">
             <div class="cennik-img">
               <img class="cennik-img" src="images/chip.png" />
             </div>
             <p class="cennik-txt"> Diagnostyka <br> 800zł-1000zł</p>
-          </div>
-          
+          </div>          
           <div class="cennik-cont col">
             <div class="cennik-img">
               <img class="cennik-img" src="images/kalibracja.png" />
             </div>
             <p class="cennik-txt">Diagnostyka <br> 100zł</p>
           </div>
-
         </div>        
       </div>
     </div>
 
-    
-
-    <div class="lightgreybg">
-
-      
-      <div class="service-det service-list row  row-cols-1 row-cols-md-2 row-cols-lg-2 ">
-
-        <div class="about" id="about">  
+    <div class="lightgreybg">  
+      <div class="service-det service-list row  row-cols-1 row-cols-md-2 row-cols-lg-2 " style="background-color:lightgrey;">
+        <div class="about" id="contact">  
           <img class="about-img" src="./images/about_logo.png">      
           <p class="about-text">
             Ul. Piastowska 1 - Przejaz kolejowy
@@ -502,12 +487,17 @@
             Międzyrzecz
             66-300
             Lubuskie
-          </p>
-          <div class="service-det service-list row  row-cols-1 row-cols-md-3 row-cols-lg-3 ">
-
+          </p>          
+          <div class="service-det service-list row  row-cols-1 row-cols-md-1 row-cols-lg-2 ">
+            <div class="about-nav col">
+              <a class="nav-link about-navlink" href="tel:0048697737005">
+                <img class="about-download" src="./images/call.png"> <br>Kodowanie Online: 
+                <br>697737005
+              </a>
+            </div>
             <div class="about-nav col">
               <a class="nav-link about-navlink" href="tel:0048697077777">
-                <img class="about-download" src="./images/call.png"> <br>Zadzwoń <br>0048697077777
+                <img class="about-download" src="./images/call.png"> <br>Zadzwoń <br>697077777
               </a>
             </div>
             <div class="about-nav col">
@@ -517,15 +507,19 @@
             </div>
             <div class="about-nav col">
               <a class="nav-link about-navlink" href="https://www.google.com/maps/place/Kuncik+Grzegorz.+Autoelektronika/@52.4496031,15.5831942,15z/data=!4m12!1m6!3m5!1s0x0:0x18ed0e4da6fedef2!2sKuncik+Grzegorz.+Autoelektronika!8m2!3d52.4495428!4d15.5833286!3m4!1s0x0:0x18ed0e4da6fedef2!8m2!3d52.4495428!4d15.5833286">
-                <img class="about-download" src="./images/nav.png"> <br>Lokalizacja
+                <img class="about-download" src="./images/nav.png"> <br>Nasza <br>Lokalizacja
               </a>
             </div>
           </div>
         </div>
 
-        <div class="contact col" id="contact">  
+        <div class="contact col"> 
+          <p id="thank-you-message">
+            Dziękujemy, twoja wiadomość została wysłana, skontaktujemy się z Tobą niezwłocznie.
+          </p>
+          <hr> 
           <br>
-          <form method="POST" action="/backend/index.php">
+          <form method="POST" id="myForm" onsubmit="return ajaxpost()">
             <div class="form-group">
               <label for="exampleFormControlInput1">Adres email</label>
               <input type="email" class="form-control" name="c_email"  placeholder="twoj@adrespocztowy.com">
@@ -543,21 +537,18 @@
               <textarea class="form-control" name="c_msg" rows="3" placeholder="Jak możemy Tobie dzisiaj pomóc?"></textarea>
             </div>
             <div class="form-group s">
-              <button type="submit" class="btn btn-primary">Wyślij</button>
+              <button type="submit" id="submitButton" class="btn btn-primary" >Wyślij</button>
             </div>
             <br>
           </form>        
         </div>
-        
       </div>
       <div class="copyright">
-        © Copyright 2021 | Autoelektronika Grzegorz Kuncik | All Rights Reserved | Powered by ________________
+        © Copyright 2021-22 | Autoelektronika Grzegorz Kuncik | All Rights Reserved | Powered by onedesign
       </div>
     </div>
 
-
     <!-- your content here... -->
     <script src="./js/script.js"></script>
-    
   </body>
 </html>
